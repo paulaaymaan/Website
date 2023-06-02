@@ -1,0 +1,92 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="styelsheet" href="profile.css">
+    <link rel="stylesheet" href="{% static 'profile.css'%}">
+    
+</head>
+
+<body>
+    <header>
+        <form action="#" method="POST">
+            {%csrf_token%}
+    
+        <link rel="stylesheet" href="profile.css">
+        <button class="button">
+            <a href="{% url 'plan'%}">Regenerate Diet Plan</a></button>
+              
+            <nav class="navigation">
+              <div class="header-btn">
+                  <a href="{% url 'Home' %}" class="home-btn" >Logout </a> 
+                  <a href="{% url 'survey' %}" class="home-btn" >survey </a> 
+             </div>
+            </nav>
+     </header>
+
+
+     <section class="main" id="profile">
+           
+               <a href="#plan" class="main-btn">Plan</a>
+               <div class="wrapper1">
+                <div class="box ">
+                  
+                    <p><h2>Welcome,{{ user.username}}</p>
+                     <p>Email: {{user.email}}</p>
+                     <p>Age: {{survey_last.age}}</p>
+                     <p>Weight: {{survey_last.weight}}</p>
+                    
+            </div>
+        
+        </div>
+    </SECTION>
+
+    <section class="cards" id="plan">
+        
+          <h2 class="title">Your plan</h2>
+          <div class="wrapper2">
+              <div class="box ">
+                   <h2>Breakfast</h2>
+                     <ul>
+                      <li>{{diet_plan.Breakfast}} </li>
+                   </ul>
+                </div>
+           </div>
+           
+
+           
+        </div>
+        <div class="wrapper3">
+            <div class="box ">
+               <h2>Lunch</h2>
+              <ul>
+              <li>{{diet_plan.Lunch}} </li>
+
+              </ul>
+            </div>
+        </div>
+        <div class="wrapper4">
+            <div class="box ">
+             <h2>Snack</h2>
+              <ul>
+               <li>{{diet_plan.Snack}}  </li>
+              </ul>
+            </div>
+        </div>
+        <div class="wrapper5">
+            <div class="box ">
+              <h2>Dinner</h2>
+             <ul>
+               <li> {{diet_plan.Dinner}} </li>
+             </ul>
+            </div>
+       </div>
+           
+        
+       
+    </section>
+</body>

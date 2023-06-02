@@ -1,0 +1,58 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="styelsheet" href="sign_up.css">
+    <link rel="stylesheet" href="{% static 'sign_up.css'%}">
+    <title>sign up</title>
+</head>
+<body>
+    <link rel="stylesheet" href="sign_up.css">
+
+
+
+    <div class="wrapper">
+        <div class="box ">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST">
+                {%csrf_token%}
+                
+                <div class="input-filed">
+                   <input type="text" class="input" placeholder="First Name" required name=UserName>
+                   <i class="fa-solid fa-user"></i>
+                </div>
+
+                 <div class="input-filed">
+                    <input type="text" class="input" placeholder="Email" required name=Email> 
+                    <i class="fa-solid fa-user"></i>
+                 </div>
+
+                <div class="input-filed">
+                    <input type="password" class="input" placeholder="Password" required name=Password>
+                    <i class="fa-solid fa-lock"></i>
+
+                 </div>
+                   <button type="submit" class="btn">sign up</button>
+
+
+                
+               
+                <div class="sign-in">
+                    <p>Already have an account?
+                    
+                        <div class"btn">
+                            <a href="{%url 'sign-in'%}"> Sign In </a>
+                        </div>    
+
+                </div>   
+
+            </form>  
+
+        </div>        
+   </div>
+</body>
+</html>

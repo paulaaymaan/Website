@@ -1,0 +1,94 @@
+{%load static%}
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="styelsheet" href="page1.css">
+         <title>next</title>
+     </head>
+       <link rel="stylesheet" href="{% static 'page1.css'%}">
+        <body>
+           <link rel="styelsheet" href="page1.css">
+       </body>
+  </html>
+
+
+  <div class="container">
+     <form action="#" method="POST">
+      {% csrf_token %}
+          <h2>QUESTIONS</h2>
+          <div class="content">
+              <div class="label-role">
+                  <label for="role"id="label-role">How many meals a day would you like to have?
+                       <select name="role" id="role">
+                           <option value=""> -- </option>
+                           <option value="0">0</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>  
+                       </select>  
+                  </label>   
+              </div>    
+            
+              <form>
+                <fieldset>
+                  <legend>Mark the food you want to include:</legend>
+                  <div>
+                    <input type="checkbox" id="Beef" name="source" value="Beef">
+                    <label for="Beef">Beef</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="Chicken" name="source" value="Chicken">
+                    <label for="Chicken">Chicken</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="Fish" name="source" value="Fish">
+                    <label for="Fish">Fish</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="Seafood" name="source" value="Seafood">
+                    <label for="Seafood">Seafood</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="All of the above" name="source" value="All of the above">
+                    <label for="All of the above">All of the above</label>
+                  </div>
+                  </div>
+                  </fieldset>
+                </form>
+            
+            
+               <div class="label-role">
+                    <label for="role"id="label-role">How much do you usually sleep?
+                       <select name="role" id="role">
+                           <option value=""> -- </option>
+                           <option value="">Up to 5 hours</option>
+                           <option value="">5-6 hours</option>
+                           <option value="">7-8 hours</option>
+                           <option value="">More than 8 hours</option>  
+                       </select> 
+                    </label>    
+               </div>   
+
+               <p>How do you typically spend your day?</p>
+                 <input type="radio" id="Sitting all day along at work" name="Question" value="Sitting all day along at work">
+                 <label for="Sitting all day along at work">Sitting all day along at work</label><br>
+                 <input type="radio" id="I'm always on my feet" name="Question" value="I'm always on my feet">
+                 <label for="I'm always on my feet">I'm always on my feet</label><br>
+                 <input type="radio" id="Doing lots of physical activity" name="Question" value="Doing lots of physical activity">
+                 <label for="Doing lots of physical activity">Doing lots of physical activity</label><br>
+                 <input type="radio" id="Staying at home" name="Question" value="Staying at home">
+                 <label for="Staying at home">Staying at home</label>
+                
+               <div class="container-btn">
+                    <a href="{%url 'survey'%}">continue</a>
+              </div>
+
+
+            </div>
+        </form>
+   </div>

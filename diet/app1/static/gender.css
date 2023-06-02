@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth; 
+}
+body{
+    background: url(img/gender.jpg) no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: hwb(0 90% 8%);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo{
+    font-family:'Times New Roman';
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    font-family: 'Times New Roman';
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+
+}
+
+.navigation a:hover{
+    color: blue;
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    
+    box-sizing: border-box;
+    background-color: hwb(0 90% 8%);
+    width: 25em;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+}
+.title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+.title h2{
+    font-family:'Times New Roman';
+    display: inline-block;
+    padding: 60px 50px;
+    margin: 10px;
+    color:blue;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.info-btn{
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+    flex-direction: row;
+    color:blue ;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    
+   
+}
+
+.info-btn:hover{
+    color: hwb(0 90% 8%);
+}
+
+

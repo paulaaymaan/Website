@@ -1,0 +1,57 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styelsheet" href="SURVEYY.css">
+    <link rel="stylesheet" href="{% static 'SURVEYY.css'%}">
+    <title>survey</title>
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet" href="SURVEYY.css">    
+    </header>
+
+    <div class="wrapper">
+        <div class="box ">
+            <h2>SURVEY</h2>
+            <form action="#" method="POST">
+                {% csrf_token %}
+                <div class="input-filed">
+                    
+                    <p>Age:{{survey.age}}</p>
+                    <input type="text" class="input" name="age" required>
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+                <div class="input-filed">
+                    
+                    <p>Weight:{{survey.weight}}</p>
+                    <input type="text" class="input" name="weight" required>
+                </div>
+                <div class="input-filed">
+                    
+                    <p>Height:{{survey.height}}</p>
+                    <input type="text"  class="input" name="height" required>
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+                <div class="input-filed">
+                    
+                    <p>Desired weight:{{survey.desired_weight}}</p>
+                    <input type="Text" class="input"  name="desired_weight" required>
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+                 <div class="btn">
+                    <button type="submit" class="btn">submit</button>
+                 </div>   
+                      
+            </form>    
+        </div>        
+   </div>
+</body>
+</html>

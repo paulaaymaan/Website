@@ -1,0 +1,125 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="styelsheet" href="Home.css">
+    <link rel="stylesheet" href="{% static 'Home.css'%}">
+    <title>Diet Plan</title>
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet" href="Home.css">
+        <a href="#" class="logo"> DIET PLAN </a>
+        <nav class="navigation">
+
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+        
+          <div class="header-btn">
+              
+              <a href="{% url 'sign-in' %}" class="signin-btn">Sign In </a>
+              
+                <a href="{% url 'sign-up' %}" class="signin-btn">Sign up </a>
+          </div>  
+        
+    </header>
+
+    <section class="main" id="Home">
+        <div>
+            <h2>Your Personal<br> Diet Plan</h2>
+
+            <br><span>We Serve up recipes for your personalized meal plan automatically.</span>
+
+            <h3> Calculate your nutritional needs and generate custom diet plans for  
+            weight loss, 
+            
+            <br>bodybuilding and much more!</h3>
+
+            <a href="#About" class="main-btn">More about us</a>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+    </section>
+
+    
+    <section class="cards" id="About">
+        <h2 class="title">About</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-thin fa-calendar-lines"></i>
+                </div>
+                <div class="info">
+                    <h3>Meal Plan Generator</h3>
+                    <p><br>This is where we make things much easier for you...</br>
+                        <br>Calorie counting or setting yourself any other nutritional targets is no use if you don’t know what to eat.</br>
+                        <br>Our meal planner takes this issue away by doing all the calculations for you and provides you with a full week’s worth of recipes tailored to both your nutritional and personal needs!</br></p>
+                
+                    </div>
+
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-thin fa-calendar-lines"></i>
+                </div>
+                <div class="info">
+                    <h3>Dietary Needs</h3>
+                    <p><br>Does your meal plan need to be Vegan, Gluten-free, Halal or is subject to any other form of dietary restriction?</br>
+                    <br>When setting up your meal plan you can program the meal planner to only find foods suitable for your personal needs.</br></p>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-thin fa-calendar-lines"></i>
+                </div>
+                <div class="info">
+                    <h3>Adjust Meal Preferences</h3>
+                    <p><br>Would you rather have your breakfast to be a meal replacement drink because you don’t have much time in the morning?</br>
+                    <br>You can adapt our recipe finder settings to ensure that we find the most appropriate recipes.</br>                   
+                    <br>Save Time & Eat Better</br></p>
+                </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="cards contact" id="Contact">
+        <h2 class="title">Let's work together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+201000000000</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>dietplan@.gmailcom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>

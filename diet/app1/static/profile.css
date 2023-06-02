@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior:none;
+} 
+
+header {
+    background-color: hwb(0 90% 8%);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.navigation a {
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+
+}
+
+.navigation a:hover{
+    color: blue;
+}
+
+
+
+
+
+
+
+header button{
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    border:none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    transition: 0.7s ease;}
+
+header button:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+header button a{
+    text-decoration: none;
+    color: blue;
+
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/survey.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main-btn{
+    color: #fff;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: blue;
+    transform: scale(1.1);
+}
+.wrapper1{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    width:400px;
+    padding: 40px;
+    background: transparent;
+    border: 2px solid rgba(0,0,0,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+	transition: 0.7s ease;   
+}
+.wrapper1:hover{
+    transform: scale(1.1);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    padding: 100px 200px;
+}
+
+.wrapper2{
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    width:400px;
+    padding: 40px;
+    background: transparent;
+    border: 2px solid rgba(0,0,0,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+	transition: 0.7s ease;   
+}
+.wrapper2:hover{
+    transform: scale(1.1);
+}
+.wrapper3{
+    position: absolute;
+    top: 150%;
+    left: 60%;
+    width:400px;
+    padding: 40px;
+    background: transparent;
+    border: 2px solid rgba(0,0,0,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+	transition: 0.7s ease;  
+}
+.wrapper3:hover{
+    transform: scale(1.1);
+}
+
+.wrapper4{
+    position: absolute;
+    top: 200%;
+    left: 15%;
+    width:400px;
+    padding: 40px;
+    background: transparent;
+    border: 2px solid rgba(0,0,0,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+	transition: 0.7s ease;
+}
+.wrapper4:hover{
+    transform: scale(1.1);
+}
+
+.wrapper5{
+    position: absolute;
+    top: 200%;
+    left: 60%;
+    width:400px;
+    padding: 40px;
+    background: transparent;
+    border: 2px solid rgba(0,0,0,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+	transition: 0.7s ease;
+}
+.wrapper5:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,51 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="styelsheet" href="gender.css">
+    <link rel="stylesheet" href="{% static 'gender.css'%}">
+    <title>Diet Plan</title>
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet" href="gender.css">
+        <a href="#" class="logo"> DIET PLAN </a>
+        <nav class="navigation">
+            <div class="header-btn">
+                <a href="{% url 'Logout' %}" class="home-btn" >Logout </a> 
+           </div>
+        </nav>
+         
+    </header>
+
+    <section class="title">
+        <div>
+            <h2 class="title">Select Your Gender</h2>
+        </div>
+    </section>
+    
+    <section class="cards">
+        <div class="content">
+            <div class="card">
+
+                <div class="info-btn">
+                    <a href="{% url 'page1' %}" class="info-btn" >MALE </a>
+                
+                </div>
+            </div>
+        
+            <div class="card">
+                
+                <div class="info-btn">
+
+                    <a href="{% url 'page1' %}" class="info-btn" >FEMALE </a>
+            </div>
+        </div>
+
+    </section>    
+</body>          

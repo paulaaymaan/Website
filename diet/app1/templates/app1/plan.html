@@ -1,0 +1,67 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diet Plan</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styelsheet" href="plan.css">
+    <link rel="stylesheet" href="{% static 'plan.css'%}">
+</head>
+<link rel="stylesheet" href="plan.css">
+<body>
+    <div class="wrapper1">
+        <div class="box ">
+	       
+	     <h2>Breakfast</h2>
+	      <ul>
+		   <li>1 whole wheat toast with avocado and tomato</li>
+		 <li>1 boiled egg</li>
+		 <li>1 cup of green tea</li>
+	     </ul>
+        </div>
+    </div>
+    <div class="wrapper2">
+        <div class="box ">
+	       <h2>Lunch</h2>
+	      <ul>
+		  <li>Grilled chicken breast with mixed greens salad</li>
+		 <li>1 small baked sweet potato</li>
+		  <li>1 apple</li>
+		  <li>1 bottle of water</li>
+	      </ul>
+        </div>
+    </div>
+    <div class="wrapper3">
+        <div class="box ">
+	     <h2>Snack</h2>
+	      <ul>
+		   <li>1 small bowl of mixed nuts</li>
+		   <li>1 cup of Greek yogurt with blueberries</li>
+		   <li>1 glass of water</li>
+	      </ul>
+        </div>
+    </div>
+    <div class="wrapper4">
+        <div class="box ">
+	      <h2>Dinner</h2>
+	     <ul>
+		   <li>Grilled salmon with steamed broccoli and brown rice</li>
+		  <li>1 small glass of orange juice</li>
+		  <li>1 bottle of water</li>
+	     </ul>
+        </div>
+    </div>
+       
+	
+	<td>{{ plan.meal }}</td>
+                    <td>{{ plan.food }}</td>
+                    <td>{{ plan.portion_size }}</td>
+                    <td>{{ plan.calories }}</td>
+                    <td>{{ plan.protein }}</td>
+                    <td>{{ plan.carbs }}</td>
+                    <td>{{ plan.fat }}</td>
+
+					
+</body>
+</html>

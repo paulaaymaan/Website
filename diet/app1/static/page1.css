@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: url(img/page.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh ;    
+}
+
+.container{
+    max-width: 800px;
+    padding: 40px;
+    
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(223, 217, 217, 0.6) ;
+    box-shadow: o 15px 20px rgba(0, 0, 0, 0.6);
+
+}
+.content{
+    padding: 5px;
+    margin: 40 10px;
+}
+
+.container h2{
+    font-family: 'times new roman';
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgb(7, 6, 6);
+    
+}
+.label-role{
+    text-align: center;
+    margin:0px;
+    display: flex;
+    width: 100%;
+    padding-bottom: 3px ;
+}
+.label-role label{
+    font-family: 'Times New Roman';
+    text-align: center;
+    padding:20px;
+    width: 100%;
+    color: #080808;
+    font-weight: bold;
+    margin: 30px 190;
+
+}
+.label-role input{
+    font-family: 'Times New Roman';
+    align-items: center;
+    height: 15px;
+    width: 150%;
+    border-radius: 8px;
+    border: 30px solid blue;
+    color: blue;
+    outline: none;
+    margin: 0px 50;
+}
+
+.content button{
+    font-family: 'Times New Roman';
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+    outline: none;
+    transition: 0.7s ease;
+}
+.content button:hover{
+    transform: scale(1.1);
+}
+.content button a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px 0;
+    transition: 0.7s ease;
+}
+
+.content button a :hover{
+    color: rgb(5, 5, 5);
+}
+
+.bottom{
+    display: flex;
+    flex-direction : row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top:10px;
+  }
+  .bottom label{
+    text-align: center;
+    padding:20px;
+    width: 100%;
+    color: #080808;
+    font-weight: bold;
+    margin: 30px 190;
+  }
+
+
+  .container-btn{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    cursor: pointer;
+    outline: none;
+    transition: 0.7s ease;
+}
+.container-btn:hover{
+    transform: scale(1.1);
+}
+.container-btn a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px 0;
+    transition: 0.7s ease;
+}
+
+.container-btn a :hover{
+    color: white;
+}
